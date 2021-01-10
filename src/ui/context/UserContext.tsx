@@ -41,7 +41,7 @@ export function useUser() {
     setData(value);
   }
 
-  function login(value: AuthorizedUser) {
+  function signIn(value: AuthorizedUser) {
     if(value.user && value.auth_token) {
       StorageController.saveUserInfo(value.user.id, value.auth_token);
     }
@@ -52,7 +52,7 @@ export function useUser() {
   return {
     user: data,
     setUser: changeUser,
-    login
+    signIn
   };
 }
 

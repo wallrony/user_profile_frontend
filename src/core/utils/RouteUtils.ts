@@ -33,7 +33,7 @@ const userRoutes: AppRoute[] = [
     component: EditUserPage,
     name: 'Editar Perfil',
     path: '/perfil'
-  }
+  },
 ];
 
 export function getRoutes(isAuth: boolean) {
