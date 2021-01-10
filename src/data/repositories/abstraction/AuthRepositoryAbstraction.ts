@@ -1,7 +1,7 @@
-import AuthorizedUser from "../../core/models/AuhorizedUser";
-import AuthCredentials from "../../core/models/AuthCredentials";
-import RegisterInfo from "../../core/models/RegisterInfo";
-import { createError } from "../../core/utils/GeneralUtils";
+import AuthorizedUser from "../../../core/models/AuhorizedUser";
+import AuthCredentials from "../../../core/models/AuthCredentials";
+import RegisterInfo from "../../../core/models/RegisterInfo";
+import { createError } from "../../../core/utils/GeneralUtils";
 import Repository from "./Repository";
 
 abstract class AuthRepositoryAbstraction extends Repository {

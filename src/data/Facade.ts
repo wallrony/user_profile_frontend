@@ -2,10 +2,10 @@ import AuthorizedUser from "../core/models/AuhorizedUser";
 import AuthCredentials from "../core/models/AuthCredentials";
 import RegisterInfo from "../core/models/RegisterInfo";
 import User from "../core/models/User";
-import AuthRepositoryAbstraction from "./IRepositories/AuthRepositoryAbstraction";
-import UsersRepositoryAbstraction from "./IRepositories/UsersRepositoryAbstraction";
-import AuthRepository from "./Repositories/AuthRepository";
-import UsersRepository from "./Repositories/UsersRepository";
+import AuthRepositoryAbstraction from "./repositories/abstraction/AuthRepositoryAbstraction";
+import UsersRepositoryAbstraction from "./repositories/abstraction/UsersRepositoryAbstraction";
+import AuthRepository from "./repositories/implementation/AuthRepository";
+import UsersRepository from "./repositories/implementation/UsersRepository";
 
 let authRepo: AuthRepositoryAbstraction;
 let usersRepo: UsersRepositoryAbstraction;

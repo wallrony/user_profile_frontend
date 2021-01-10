@@ -1,5 +1,5 @@
-import User from "../../core/models/User";
-import { createError } from "../../core/utils/GeneralUtils";
+import User from "../../../core/models/User";
+import { createError } from "../../../core/utils/GeneralUtils";
 
 class UsersRepositoryAbstraction {
   async show(id: number): Promise<User> {

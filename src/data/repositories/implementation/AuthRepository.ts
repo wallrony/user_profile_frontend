@@ -1,8 +1,8 @@
-import AuthorizedUser from "../../core/models/AuhorizedUser";
-import AuthCredentials from "../../core/models/AuthCredentials";
-import RegisterInfo from "../../core/models/RegisterInfo";
-import AuthRepositoryAbstraction from "../IRepositories/AuthRepositoryAbstraction";
-import { apiPost } from "./Client";
+import AuthorizedUser from "../../../core/models/AuhorizedUser";
+import AuthCredentials from "../../../core/models/AuthCredentials";
+import RegisterInfo from "../../../core/models/RegisterInfo";
+import AuthRepositoryAbstraction from "../abstraction/AuthRepositoryAbstraction";
+import { apiPost } from "../Client";
 
 class AuthRepository extends AuthRepositoryAbstraction {
   async login(credentials: AuthCredentials): Promise<AuthorizedUser> {

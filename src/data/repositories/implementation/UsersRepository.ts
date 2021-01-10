@@ -1,6 +1,6 @@
-import User from "../../core/models/User";
-import IUsersRepository from "../IRepositories/UsersRepositoryAbstraction";
-import { apiGet, apiPut } from "./Client";
+import User from "../../../core/models/User";
+import IUsersRepository from "../abstraction/UsersRepositoryAbstraction";
+import { apiGet, apiPut } from "../Client";
 
 class UsersRepository extends IUsersRepository {
   async show(id: number): Promise<User> {
