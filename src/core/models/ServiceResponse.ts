@@ -1,6 +1,6 @@
 interface ServiceResponse<T> {
   data?: T;
-  err?: Error;
+  err?: string;
 }
 
 export default ServiceResponse;

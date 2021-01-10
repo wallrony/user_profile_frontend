@@ -1,3 +1,7 @@
+const errorMap: Record<string, string> = {
+  'unimplemented method error': 'É necessário implementar o método utilizado.'
+};
+
 export function createError(name: string, message?: string): Error {
   const err = Error();
 
@@ -13,4 +17,14 @@ export function refValue(ref: React.RefObject<HTMLInputElement | HTMLSelectEleme
   }
 
   return '';
+}
+
+export function findErrorByName(name: string) {
+  const err: string = errorMap[name];
+
+  if(!err) {
+    return 'Erro inesperado.';
+  }
+
+  return err;
 }
