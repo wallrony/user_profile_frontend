@@ -1,7 +1,7 @@
 import User from "../../core/models/User";
 import { createError } from "../../core/utils/GeneralUtils";
 
-class IUsersRepository {
+class UsersRepositoryAbstraction {
   async show(id: number): Promise<User> {
     throw createError('unimplemented method error', 'you must implement this method');
   }
@@ -11,4 +11,4 @@ class IUsersRepository {
   }
 }
 
-export default IUsersRepository;
+export default UsersRepositoryAbstraction;

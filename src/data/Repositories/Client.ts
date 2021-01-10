@@ -28,8 +28,8 @@ function createAuthHeader() {
   };
 }
 
-export async function apiGet(path: string) {
-  const result = await api.get(
+export async function apiGet<T = any>(path: string): Promise<T> {
+  const result = await api.get<T>(
     path,
     { headers: createAuthHeader() }
   );
@@ -37,18 +37,11 @@ export async function apiGet(path: string) {
   return result['data'];
 }
 
-export async function apiPost(path: string, body: Record<string, any>) {
-  const result = await api.post(
-    path,
-    body,
-    { headers: createAuthHeader() }
-  );
-
-  return result['data'];
-}
-
-export async function apiPut(path: string, body: Record<string, any>) {
-  const result = await api.put(
+export async function apiPost<T = any>(
+  path: string,
+  body: Record<string, any>
+): Promise<T> {
+  const result = await api.post<T>(
     path,
     body,
     { headers: createAuthHeader() }
@@ -57,8 +50,21 @@ export async function apiPut(path: string, body: Record<string, any>) {
   return result['data'];
 }
 
-export async function apiDelete(path: string) {
-  const result = await api.delete(
+export async function apiPut<T = any>(
+  path: string,
+  body: Record<string, any>
+): Promise<T> {
+  const result = await api.put<T>(
+    path,
+    body,
+    { headers: createAuthHeader() }
+  );
+
+  return result['data'];
+}
+
+export async function apiDelete<T = any>(path: string): Promise<T> {
+  const result = await api.delete<T>(
     path,
     { headers: createAuthHeader() }
   );

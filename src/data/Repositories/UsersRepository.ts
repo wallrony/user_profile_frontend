@@ -1,16 +1,16 @@
 import User from "../../core/models/User";
-import IUsersRepository from "../IRepositories/IUsersRepository";
+import IUsersRepository from "../IRepositories/UsersRepositoryAbstraction";
 import { apiGet, apiPut } from "./Client";
 
 class UsersRepository extends IUsersRepository {
   async show(id: number): Promise<User> {
-    const result: User = await apiGet(`/accounts/users/${id}`);
+    const result = await apiGet<User>(`/accounts/users/${id}`);
 
     return result;
   }
 
   async update(data: User): Promise<User> {
-    const result: User = await apiPut(
+    const result = await apiPut<User>(
       `/accounts/users/${data.id}`,
       data
     );
