@@ -1,9 +1,15 @@
 import React from 'react';
 import { Layout } from 'antd';
 
-const BasePage: React.FC = ({ children }) => {
+import './styles.css';
+
+interface BasePageProps {
+  className?: string;
+}
+
+const BasePage: React.FC<BasePageProps> = ({ children, className }) => {
   return (
-    <Layout>
+    <Layout className={`app-page ${className}`}>
       {children}
     </Layout>
   );

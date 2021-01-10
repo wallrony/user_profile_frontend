@@ -1,0 +1,10 @@
+.app-page {
+  background-color: var(--color-accent) !important;
+
+  padding: 16px;
+  margin: 8px;
+
+  border-radius: 3px;
+
+  box-shadow: 1px 1px 4px 2px var(--color-shadow);
+}

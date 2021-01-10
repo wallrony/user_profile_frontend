@@ -8,14 +8,17 @@ import AppRoute from "../models/AppRoute";
 const baseRoutes: AppRoute[] = [
   {
     component: HomePage,
+    name: 'Home',
     path: '/',
   },
   {
     component: LoginPage,
+    name: 'Entrar',
     path: '/login',
   },
   {
     component: RegisterPage,
+    name: 'Cadastrar',
     path: '/register',
   },
 ];
@@ -23,10 +26,12 @@ const baseRoutes: AppRoute[] = [
 const userRoutes: AppRoute[] = [
   {
     component: UserInfoPage,
+    name: 'Perfil',
     path: '/',
   },
   {
     component: EditUserPage,
+    name: 'Editar Perfil',
     path: '/perfil'
   }
 ];

@@ -1,0 +1,26 @@
+.app-header {
+  background-color: var(--color-accent) !important;
+
+  margin: 8px !important;
+
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 2px var(--color-shadow);
+}
+
+.app-header .ant-page-header-heading-title h2 {
+  margin-bottom: 0 !important;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .app-header .ant-page-header-heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header .ant-page-header-heading-extra {
+    display: inline-grid;
+  
+    grid-template-columns: auto auto auto;
+  }
+}

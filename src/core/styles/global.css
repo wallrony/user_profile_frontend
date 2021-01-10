@@ -3,4 +3,28 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  outline: none;
+}
+
+:root {
+  --color-primary: rgb(255, 187, 0);
+  --color-text: rgb(37, 37, 37);
+  --color-accent: white;
+  --color-shadow: rgba(128, 128, 128, 0.3);
+  --color-selected-border: goldenrod;
+  --color-bg: #eaeaea;
+}
+
+#root {
+  background-color: var(--color-bg);
+}
+
+#root, #app {
+  position: relative;
+  top: 0;
+
+  height: 100%;
+
+  overflow: auto;
 }

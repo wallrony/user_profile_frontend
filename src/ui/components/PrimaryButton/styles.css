@@ -1,0 +1,16 @@
+.app-primary-btn {
+  background-color: var(--color-primary) !important;
+  color: var(--color-accent) !important;
+
+  border-color: var(--color-selected-border) !important;
+  font-weight: bold !important;
+  font-size: 1.25em !important;
+
+  height: unset !important;
+
+  width: 100%;
+}
+
+.app-primary-btn:hover {
+  box-shadow: 1px 1px 3px 1px var(--color-shadow);
+}

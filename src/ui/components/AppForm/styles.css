@@ -1,0 +1,14 @@
+.app-form {
+  width: 60%;
+
+  margin: auto !important;
+}
+
+.app-form .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.app-form .form-title {
+  font-size: 2em;
+  font-weight: bold;
+}
